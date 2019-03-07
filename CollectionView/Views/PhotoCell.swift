@@ -13,6 +13,7 @@ class Photocell: UICollectionViewCell
     
     @IBOutlet var photoImageView: UIImageView!
     var imageName: String! {
-        didSet
+        didSetcd
+        cdcd
     }
 }
