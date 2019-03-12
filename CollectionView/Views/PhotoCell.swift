@@ -8,12 +8,15 @@
 
 import UIKit
 
-class Photocell: UICollectionViewCell
+class PhotoCell: UICollectionViewCell
 {
     
+   
     @IBOutlet var photoImageView: UIImageView!
     var imageName: String! {
-        didSetcd
-        cdcd
+        didSet{
+            photoImageView.image = UIImage(named: imageName)
+        }
+       
     }
 }

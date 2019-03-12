@@ -12,20 +12,20 @@
         <!--Photos-->
         <scene sceneID="EUQ-TD-5Hy">
             <objects>
-                <collectionViewController id="qL7-9Z-0mz" sceneMemberID="viewController">
+                <collectionViewController id="qL7-9Z-0mz" customClass="PhotosCollectionViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cqQ-T3-rij">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="urV-cc-kGL">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="urV-cc-kGL">
                             <size key="itemSize" width="200" height="200"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uaq-Zf-hG8" customClass="Photocell" customModule="CollectionView" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="uaq-Zf-hG8" customClass="PhotoCell" customModule="CollectionView" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="50" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -43,10 +43,14 @@
                                     <constraint firstAttribute="trailing" secondItem="Qp9-V5-eUw" secondAttribute="trailing" id="weL-u5-po8"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="photoImageView" destination="Qp9-V5-eUw" id="eDz-dj-Wcd"/>
+                                    <outlet property="photoImageView" destination="Qp9-V5-eUw" id="6Ih-LX-Mv8"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w0g-dY-9ZC">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="qL7-9Z-0mz" id="UIb-rl-5cg"/>
                             <outlet property="delegate" destination="qL7-9Z-0mz" id="oBZ-yL-OOL"/>
@@ -56,7 +60,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNw-Gs-aos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="74.212893553223395"/>
+            <point key="canvasLocation" x="1202" y="82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Hb-6r-fuh">
@@ -78,7 +82,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJH-UO-W78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="75"/>
+            <point key="canvasLocation" x="121" y="74"/>
         </scene>
     </scenes>
     <resources>
