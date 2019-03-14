@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0432DE2822310DFB005EFA45 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432DE2722310DFB005EFA45 /* PhotoCell.swift */; };
 		0432DE2A2232668B005EFA45 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432DE292232668B005EFA45 /* PhotosCollectionViewController.swift */; };
+		047F4DAB223A3A9F00FF3D73 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F4DAA223A3A9F00FF3D73 /* SectionHeaderView.swift */; };
+		047F4DAD223A3F8A00FF3D73 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F4DAC223A3F8A00FF3D73 /* DetailViewController.swift */; };
 		04FAEC66222FD7A800AE569E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAEC65222FD7A800AE569E /* AppDelegate.swift */; };
 		04FAEC6B222FD7A800AE569E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FAEC69222FD7A800AE569E /* Main.storyboard */; };
 		04FAEC6D222FD7AB00AE569E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FAEC6C222FD7AB00AE569E /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		0432DE2722310DFB005EFA45 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		0432DE292232668B005EFA45 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		047F4DAA223A3A9F00FF3D73 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		047F4DAC223A3F8A00FF3D73 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		04FAEC62222FD7A800AE569E /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FAEC65222FD7A800AE569E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FAEC6A222FD7A800AE569E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			children = (
 				04FAEC69222FD7A800AE569E /* Main.storyboard */,
 				0432DE2722310DFB005EFA45 /* PhotoCell.swift */,
+				047F4DAA223A3A9F00FF3D73 /* SectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				0432DE292232668B005EFA45 /* PhotosCollectionViewController.swift */,
+				047F4DAC223A3F8A00FF3D73 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			files = (
 				04FAEC78222FD8FD00AE569E /* Photo.swift in Sources */,
 				0432DE2822310DFB005EFA45 /* PhotoCell.swift in Sources */,
+				047F4DAB223A3A9F00FF3D73 /* SectionHeaderView.swift in Sources */,
+				047F4DAD223A3F8A00FF3D73 /* DetailViewController.swift in Sources */,
 				04FAEC66222FD7A800AE569E /* AppDelegate.swift in Sources */,
 				0432DE2A2232668B005EFA45 /* PhotosCollectionViewController.swift in Sources */,
 			);

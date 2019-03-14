@@ -21,7 +21,7 @@ class PhotosLibrary{
     class func fetchPhotos() -> [PhotoCategory]
     {
         var categories = [PhotoCategory]()
-        let photosData = PhotosLibrary.downloadPhotosData()
+        let photosData = downloadPhotosData()
         
         for(categoryTitle,dict) in photosData {
             if let dict = dict as? [String : Any] {
@@ -34,7 +34,7 @@ class PhotosLibrary{
         }
         return categories
     }
-    class func downloadPhotosData() -> [String: Any]{
+     class func downloadPhotosData() -> [String: Any]{
         return [
             "Family" : [
                 "categoryImageName" : "family",

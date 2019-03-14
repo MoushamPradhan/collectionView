@@ -13,6 +13,8 @@ class PhotosCollectionViewController : UICollectionViewController {
     
     struct StoryBoard {
         static let PhotoCell = "PhotoCell"
+        static let sectionHeaderView = "SectionHeaderView"
+        static let showDetailVC = "ShowImageDetail"
         
         static let leftAndRightPadding: CGFloat = 2.0
         static let numberOfItemsPerRow: CGFloat = 3.0
@@ -47,5 +49,25 @@ class PhotosCollectionViewController : UICollectionViewController {
         let imageName = imageNames[indexPath.item]
         cell.imageName = imageName
         return cell
+    }
+    
+    //Section HeaderView
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: StoryBoard.sectionHeaderView, for: indexPath) as! SectionHeaderView
+        let category = photoCategories[indexPath.section]
+        
+        sectionHeaderView.photoCategory = category
+        return sectionHeaderView
+    }
+    
+    //MARK: -UICollectionViewDelegate
+    
+    var selectedImage: UIImage!
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let category = photoCategories[indexPath.section]
+        selectedImage = UIImage(named: category.imageNames[indexPath.item])
+        
+        performSegue(withIdentifier: StoryBoard.showDetailVC, sender: nil)
     }
 }
